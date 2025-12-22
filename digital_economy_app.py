@@ -193,7 +193,7 @@ def main():
         with col_a:
             tech_data = pd.DataFrame.from_dict(latest_tech_counts, orient='index', columns=['词频'])
             tech_data = tech_data.sort_values('词频', ascending=True)
-            st.bar_chart(tech_data, horizontal=True)
+            st.bar_chart(tech_data)
         with col_b:
              st.info("💡 说明：\n该图表展示了企业在最近一年财报中各数字技术关键词的出现频率分布，反映了企业当前的技术投入重点。")
 
